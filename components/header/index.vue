@@ -3,8 +3,8 @@
     <div class="wrap">
       <div class="brand">
         <h2 class="inline-block">DJLUN.</h2>
-        <p class="desc inline-block">Thoughts, stories and ideas.</p>
-        <!-- <p class="desc inline-block">Codes.</p> -->
+        <!-- <p class="desc inline-block">Thoughts, stories and ideas.</p> -->
+        <p class="desc inline-block">Codes.</p>
       </div>
       <nav class="nav">
         <ul class="menu inline-block">
@@ -96,19 +96,19 @@ export default {
         font-size: 12px;
         line-height: 73px;
         .item {
-          margin-right: 30px;
-          transition: all 0.75s;
+          padding: 0 15px;
+          transition: all 0.5s;
           &::after {
             content: '';
             position: absolute;
-            left: 0;
-            right: 0;
+            left: 15px;
+            right: 15px;
             bottom: 10px;
             height: 1px;
             transform: scaleY(0.5);
             background-color: #aaa;
             opacity: 0;
-            transition: all 0.75s;
+            transition: all 0.5s;
           }
         }
         .item-over {
@@ -119,18 +119,18 @@ export default {
           &::after {
             content: '';
             position: absolute;
-            left: 0;
-            right: 0;
+            left: 15px;
+            right: 15px;
             bottom: 25px;
             height: 1px;
             transform: scaleY(0.5);
             background-color: #aaa;
             opacity: 1;
-            transition: all 0.75s;
+            transition: all 0.5s;
           }
         }
         .item-no-active {
-          transition: all 0.75s;
+          transition: all 0.5s;
           color: #aaa;
         }
       }

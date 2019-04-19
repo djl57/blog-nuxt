@@ -7,6 +7,14 @@
 .table-cell {
   display: table-cell;
 }
+.clearfix {
+  zoom: 1;
+}
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
 
 ul, p, h2 {
   margin: 0;

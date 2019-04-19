@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="copyright">
-      Copyright © 2019 - <span class="author">DJLUN.</span>
+      Copyright © {{ new Date().getFullYear() }} - <span class="author">DJLUN.</span>
     </div>
   </div>
 </template>
@@ -35,9 +35,10 @@ export default {
       recom: [
         { link: 'https://unsplash.com/', name: 'unsplash' },
         { link: 'https://marketplace.ghost.org/', name: 'ghost' },
+        { link: 'https://www.iconfont.cn/', name: 'iconfont' },
       ],
       sourse: [
-        { link: 'https://github.com/djl57', name: 'github' },
+        { link: 'https://github.com/djl57/blog-nuxt', name: 'github' },
       ],
       showEmail: false,
       email: '获 取'
@@ -69,6 +70,7 @@ export default {
         font-size: 14px;
         letter-spacing: 2px;
         padding-bottom: 20px;
+        font-weight: 600;
       }
       .item {
         height: 32px;
@@ -87,7 +89,7 @@ export default {
     .right {
       padding: 60px 0 60px 60px;
       .get {
-        width: 150px;
+        width: 100%;
         height: 30px;
         line-height: 30px;
         font-size: 12px;
